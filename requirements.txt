@@ -8,7 +8,6 @@ gunicorn
 itsdangerous
 Jinja2
 MarkupSafe
-numpy
 pandas
 redis
 tensorflow-cpu
