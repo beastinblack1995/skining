@@ -1,7 +1,6 @@
 eventlet
 Flask
 gunicorn
-MarkupSafe
 pandas
 tensorflow-cpu
 Werkzeug
