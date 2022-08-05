@@ -1,8 +1,6 @@
 eventlet
 Flask
 gunicorn
-itsdangerous
-Jinja2
 MarkupSafe
 pandas
 tensorflow-cpu
