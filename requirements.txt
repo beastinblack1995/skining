@@ -5,7 +5,6 @@ itsdangerous
 Jinja2
 MarkupSafe
 pandas
-redis
 tensorflow-cpu
 Werkzeug
 
