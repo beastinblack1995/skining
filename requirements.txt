@@ -1,6 +1,5 @@
 eventlet
 Flask
-gevent
 gunicorn
 itsdangerous
 Jinja2
@@ -8,6 +7,5 @@ MarkupSafe
 pandas
 redis
 tensorflow-cpu
-six
 Werkzeug
 
