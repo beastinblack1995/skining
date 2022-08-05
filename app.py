@@ -1,20 +1,12 @@
 from flask import Flask, request, render_template
 
 
-import numpy as np
-import pickle
 import pandas as pd
-import numpy as np
-from pprint import pprint
-from collections import Counter
-from sklearn.decomposition import TruncatedSVD
-from scipy.sparse import csr_matrix
-from sklearn.metrics.pairwise import cosine_similarity
-import itertools
 
 from tensorflow import keras
 
-
+from keras.models import Sequential
+from keras.layers import Dense
 
 
 # Create Flask object to run
@@ -22,10 +14,7 @@ app = Flask(__name__,template_folder= 'templates' )
 
 
 
-import pandas as pd
-from keras.models import Sequential
-from keras.layers import Dense
-import numpy as np
+
 df = pd.read_csv('new_ing_csv.csv')
 X = df[['Age', 'SkinType', 'SkinTone', 'SkinConcerns', 'Gender',
        'Race', 'Climate']]
