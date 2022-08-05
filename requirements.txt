@@ -13,7 +13,7 @@ Jinja2
 MarkupSafe
 numpy
 olefile
-
+pandas
 Pillow
 redis
 tensorflow-cpu
