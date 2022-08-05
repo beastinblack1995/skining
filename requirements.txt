@@ -5,8 +5,6 @@ enum34
 eventlet==0.30.2
 Flask
 gevent
-gevent-websocket
-greenlet
 gunicorn
 itsdangerous
 Jinja2
