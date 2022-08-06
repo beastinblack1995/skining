@@ -28,7 +28,7 @@ Yencoded_EA_Anti_Age_Skin_ID_Cell_Commute = pd.get_dummies(df['EA_Anti_Age+Skin_
 Yencoded_IA_Antioxidant = pd.get_dummies(df['IA_Antioxidant'])
 Yencoded_YA_Occusive = pd.get_dummies(df['YA_Occusive'])
 Yencoded_BR_Anti_Acne = pd.get_dummies(df['BR_Anti_Acne'])
-#Yencoded_WR_Skin_ID_Occusive = pd.get_dummies(df['WR_Skin_ID+Occusive'])
+Yencoded_WR_Skin_ID_Occusive = pd.get_dummies(df['WR_Skin_ID+Occusive'])
 Yencoded_DRY_Dry = pd.get_dummies(df['DRY_Dry'])
 Yencoded_TROPICAL_Antioxidant_Humectant = pd.get_dummies(df['TROPICAL_Antioxidant+Humectant'])
 Yencoded_TEMPERATE_Humectant = pd.get_dummies(df['TEMPERATE_Humectant'])
@@ -54,7 +54,7 @@ Yencoded_TEMPERATE_Humectant_model  = keras.models.load_model('Yencoded_TEMPERAT
 Yencoded_CONTINENAL_Emolient_model  = keras.models.load_model('Yencoded_CONTINENAL_Emolient_model')
 Yencoded_POLAR_Humectants_Occlusive_Emollients_model  = keras.models.load_model('Yencoded_POLAR_Humectants_Occlusive_Emollients_model')
 
-st = ['Yencoded_Extracts_model','Yencoded_All_Age_Suitable_Ing_model','Yencoded_Anti_Acne_Moisturizer_model','Yencoded_Antioxidant_Anti_Aging_Moisturizer_model','Yencoded_F_Skin_ID_Soothing_model','Yencoded_M_Antioxidant_Occlusive_model','Yencoded_EA_Anti_Age_Skin_ID_Cell_Commute_model','Yencoded_IA_Antioxidant_model','Yencoded_YA_Occusive_model','Yencoded_BR_Anti_Acne_model','Yencoded_DRY_Dry_model','Yencoded_TROPICAL_Antioxidant_Humectant_model','Yencoded_TEMPERATE_Humectant_model','Yencoded_CONTINENAL_Emolient_model','Yencoded_POLAR_Humectants_Occlusive_Emollients_model'
+st = ['Yencoded_Extracts_model','Yencoded_All_Age_Suitable_Ing_model','Yencoded_Anti_Acne_Moisturizer_model','Yencoded_Antioxidant_Anti_Aging_Moisturizer_model','Yencoded_F_Skin_ID_Soothing_model','Yencoded_M_Antioxidant_Occlusive_model','Yencoded_EA_Anti_Age_Skin_ID_Cell_Commute_model','Yencoded_IA_Antioxidant_model','Yencoded_YA_Occusive_model','Yencoded_BR_Anti_Acne_model','Yencoded_WR_Skin_ID_Occusive_model','Yencoded_DRY_Dry_model','Yencoded_TROPICAL_Antioxidant_Humectant_model','Yencoded_TEMPERATE_Humectant_model','Yencoded_CONTINENAL_Emolient_model','Yencoded_POLAR_Humectants_Occlusive_Emollients_model'
 ]
 
 
@@ -207,7 +207,7 @@ def modreccomender(custtdetails):
           final['Anti-Acne'] = dc['Yencoded_BR_Anti_Acne_model'] 
     if   (custtdetails['Race'] == 'White')  :
         
-          final['Skin_Identical and Occusive '] = dc['Yencoded_DRY_Dry_model']     
+          final['Skin_Identical and Occusive '] = dc['Yencoded_WR_Skin_ID_Occusive_model']     
             
 
  
