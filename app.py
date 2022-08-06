@@ -134,16 +134,16 @@ def modreccomender(custtdetails):
         
     if   (custtdetails['Age'] == '13-17') or (custtdetails['Age'] == '18-24')  or (custtdetails['Age'] == '25-34'):
         
-          final[f'{custtdetails['Age']} - Occusive'] = dc['Yencoded_YA_Occusive_model']
+         final[f"{custtdetails['Age']} - Occusive"] = dc['Yencoded_YA_Occusive_model']
             
     if   (custtdetails['Age'] == '35-44') or (custtdetails['Age'] == '45-54')  :
         
-          final[f'{custtdetails['Age']} - Antioxidant'] = dc['Yencoded_IA_Antioxidant_model'] 
+         final[f"{custtdetails['Age']} - Antioxidant"] = dc['Yencoded_IA_Antioxidant_model'] 
             
             
     if   (custtdetails['Age'] == '55-120') :
         
-          final[f'{custtdetails['Age']} - Skin_Identical and Cell_Commute'] = dc['Yencoded_EA_Anti_Age_Skin_ID_Cell_Commute_model'] 
+         final[f"{custtdetails['Age']} - Skin_Identical and Cell_Commute"] = dc['Yencoded_EA_Anti_Age_Skin_ID_Cell_Commute_model'] 
             
             
             
@@ -151,35 +151,35 @@ def modreccomender(custtdetails):
             
     if   (custtdetails['SkinConcerns'] == 'Acne'):
         
-          final[f'{custtdetails['SkinConcerns']} - Anti-Acne'] = dc['Yencoded_Anti_Acne_Moisturizer_model']
+         final[f"{custtdetails['SkinConcerns']} - Anti-Acne"] = dc['Yencoded_Anti_Acne_Moisturizer_model']
             
             
     if   (custtdetails['SkinConcerns'] == 'Aging'):
         
-          final[f'{custtdetails['SkinConcerns']} - Anti-Aging and Antioxidant'] = dc['Yencoded_Antioxidant_Anti_Aging_Moisturizer_model'] 
+         final[f"{custtdetails['SkinConcerns']} - Anti-Aging and Antioxidant"] = dc['Yencoded_Antioxidant_Anti_Aging_Moisturizer_model'] 
             
             
             
     if   (custtdetails['Climate'] == 'Continental')  :
         
-          final[f'{custtdetails['Climate']} - Emolient'] = dc['Yencoded_CONTINENAL_Emolient_model'] 
+         final[f"{custtdetails['Climate']} - Emolient"] = dc['Yencoded_CONTINENAL_Emolient_model'] 
             
             
     if   (custtdetails['Climate'] == 'Polar') :
         
-          final[f'{custtdetails['Climate']} - Humectants Occlusive and Emollients'] = dc['Yencoded_POLAR_Humectants_Occlusive_Emollients_model']             
+         final[f"{custtdetails['Climate']} - Humectants Occlusive and Emollients"] = dc['Yencoded_POLAR_Humectants_Occlusive_Emollients_model']             
             
     if   (custtdetails['Climate'] == 'Tropical') :
         
-          final[f'{custtdetails['Climate']} - Antioxidant and Humectant'] = dc['Yencoded_TROPICAL_Antioxidant_Humectant_model']                
+         final[f"{custtdetails['Climate']} - Antioxidant and Humectant"] = dc['Yencoded_TROPICAL_Antioxidant_Humectant_model']                
         
     if   (custtdetails['Climate'] == 'Dry') :
         
-          final[f'{custtdetails['Climate']} - Skin_Identical and Occusive'] = dc['Yencoded_DRY_Dry_model']             
+         final[f"{custtdetails['Climate']} - Skin_Identical and Occusive"] = dc['Yencoded_DRY_Dry_model']             
             
     if   (custtdetails['Climate'] == 'Temperate') :
         
-          final[f'{custtdetails['Climate']} - Humectant'] = dc['Yencoded_TEMPERATE_Humectant_model']              
+         final[f"{custtdetails['Climate']} - Humectant"] = dc['Yencoded_TEMPERATE_Humectant_model']              
             
             
             
@@ -189,18 +189,18 @@ def modreccomender(custtdetails):
             
     if   (custtdetails['Gender'] == 'Male') :
         
-          final[f'{custtdetails['Gender']} - Antioxidant and Occlusive'] = dc['Yencoded_M_Antioxidant_Occlusive_model']             
+         final[f"{custtdetails['Gender']} - Antioxidant and Occlusive"] = dc['Yencoded_M_Antioxidant_Occlusive_model']             
             
     if   (custtdetails['Gender'] == 'Female') :
         
-          final[f'{custtdetails['Gender']} -  Skin_Identical and Soothing'] = dc['Yencoded_F_Skin_ID_Soothing_model']               
+         final[f"{custtdetails['Gender']} -  Skin_Identical and Soothing"] = dc['Yencoded_F_Skin_ID_Soothing_model']               
             
     if   (custtdetails['Race'] == 'Black'):
         
-          final[f'{custtdetails['Race']} - Anti-Acne'] = dc['Yencoded_BR_Anti_Acne_model'] 
+         final[f"{custtdetails['Race']} - Anti-Acne"] = dc['Yencoded_BR_Anti_Acne_model'] 
     if   (custtdetails['Race'] == 'White')  :
         
-          final[f'{custtdetails['Race']} - Skin_Identical and Occusive '] = dc['Yencoded_WR_Skin_ID_Occusive_model']     
+         final[f"{custtdetails['Race']} - Skin_Identical and Occusive "] = dc['Yencoded_WR_Skin_ID_Occusive_model']     
             
 
  
