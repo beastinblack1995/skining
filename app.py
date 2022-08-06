@@ -59,7 +59,7 @@ st = ['Yencoded_Extracts_model','Yencoded_All_Age_Suitable_Ing_model','Yencoded_
 
 
 
-modellist = [Yencoded_Extracts_model,Yencoded_All_Age_Suitable_Ing_model,Yencoded_Antioxidant_Anti_Aging_Moisturizer_model,Yencoded_F_Skin_ID_Soothing_model,Yencoded_M_Antioxidant_Occlusive_model,Yencoded_EA_Anti_Age_Skin_ID_Cell_Commute_model,Yencoded_IA_Antioxidant_model,Yencoded_YA_Occusive_model,Yencoded_BR_Anti_Acne_model,Yencoded_WR_Skin_ID_Occusive_model,Yencoded_DRY_Dry_model,Yencoded_TROPICAL_Antioxidant_Humectant_model,Yencoded_TEMPERATE_Humectant_model,Yencoded_CONTINENAL_Emolient_model,Yencoded_POLAR_Humectants_Occlusive_Emollients_model]
+modellist = [Yencoded_Extracts_model,Yencoded_All_Age_Suitable_Ing_model,Yencoded_Anti_Acne_Moisturizer_model,Yencoded_Antioxidant_Anti_Aging_Moisturizer_model,Yencoded_F_Skin_ID_Soothing_model,Yencoded_M_Antioxidant_Occlusive_model,Yencoded_EA_Anti_Age_Skin_ID_Cell_Commute_model,Yencoded_IA_Antioxidant_model,Yencoded_YA_Occusive_model,Yencoded_BR_Anti_Acne_model,Yencoded_WR_Skin_ID_Occusive_model,Yencoded_DRY_Dry_model,Yencoded_TROPICAL_Antioxidant_Humectant_model,Yencoded_TEMPERATE_Humectant_model,Yencoded_CONTINENAL_Emolient_model,Yencoded_POLAR_Humectants_Occlusive_Emollients_model]
 
 
 Ylist = [Yencoded_Extracts, 
@@ -78,14 +78,7 @@ Yencoded_TROPICAL_Antioxidant_Humectant,
 Yencoded_TEMPERATE_Humectant ,
 Yencoded_CONTINENAL_Emolient,
 Yencoded_POLAR_Humectants_Occlusive_Emollients ]
-
-def out(el):
-    
-    if el >0.5:
-        
-        return 1
-    else:
-        return 0
+print(len(st),len(Ylist),len(modellist))
 
 def arrr(predictionss):
     
