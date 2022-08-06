@@ -2,5 +2,5 @@ eventlet
 Flask
 gunicorn
 pandas
-tensorflow-cpu
+keras
 
