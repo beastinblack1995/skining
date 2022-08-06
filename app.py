@@ -2,7 +2,6 @@ from flask import Flask, request, render_template
 
 
 import pandas as pd
-import keras
 
 from keras.models import Sequential
 from keras.layers import Dense
