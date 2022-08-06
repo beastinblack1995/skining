@@ -154,7 +154,7 @@ def modreccomender(custtdetails):
           final['Anti-Acne'] = dc['Yencoded_Anti_Acne_Moisturizer_model']
             
             
-    if   (custtdetails['SkinConcerns'] == 'Aging') or (custtdetails['Age'] == '45-54')  :
+    if   (custtdetails['SkinConcerns'] == 'Aging'):
         
           final['Anti-Aging and Antioxidant'] = dc['Yencoded_Antioxidant_Anti_Aging_Moisturizer_model'] 
             
